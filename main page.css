@@ -1,0 +1,621 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.main{
+    width:100%;
+    height:100vh ;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 20px;
+      
+      
+
+}
+.main .searchbox{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    top:350px
+
+}
+.searchbox i{
+    background-color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    color: white;
+    border: white;
+    border-left: none;
+}
+.searchbox input{
+    background-color: black;
+    border: white;
+    border-right: none;
+    padding: 9px;
+    width: 300px;
+}
+.searchbox input::placeholder{
+    color: white;
+}
+.searchbox input:focus{
+    box-shadow: 5px 5px 5px aqua;
+
+}
+.searchbox i:focus{
+    box-shadow: 5px 5px 5px aqua;
+
+}
+
+.main img{
+    width: 100%;
+    height: 100%;
+    background-size:cover ;
+    
+
+}
+
+.navbar img{
+    width: 50px;
+    height: 50px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+.navbar{
+    width: 95%;
+    right: 40px;
+    padding: 15px 5px;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    border-radius: 50px;
+    top: 20px;
+    box-shadow: 5px 5px 5px gray;
+    z-index: 999;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: ' ';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom:-2px;
+    animation: line;
+    transition:0.5s ;
+
+}
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+@media screen  and (min-width:300px) and (max-width:500px){
+    .searchbox input{
+        background-color: black;
+        border: white;
+        border-right: none;
+        padding: 9px;
+        width: 250px;
+    }
+    .navbar{
+        width: 95%;
+        right: 13px;
+        padding: 15px 5px;
+        display: flex;
+        background-color: white;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        border-radius: 50px;
+        top: 20px;
+        box-shadow: 5px 5px 5px gray;
+        z-index: 999;
+        
+    }
+    
+}
+
+
+.iconbox{
+    width: 100%;
+    margin-top: 50px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.icondetail{
+    width: 95%;
+    padding: 30px;
+    margin: auto;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+    align-items: center;
+
+
+}
+.icon1{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 5px;
+
+}
+.icon{ background-color: white;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-top: 10px;
+
+}
+.icon2{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 5px;
+    
+}
+.icon3{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 20px ;
+    padding: 5px;
+    
+}
+.idea{
+    text-align: center;
+    margin-top: 30px;
+
+}
+                                      /* idea */                                
+.overallcard{
+    width:100%;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+.cardcontent{
+    padding: 10px;
+}
+.cardcontent h1{
+    font-size: 20px;
+    padding-top: 10px;
+}
+.cardcontent+span{
+    color: grey;
+}
+.cardbox{
+    width: 300px;
+    border: 2px solid grey;
+}
+.cardbox a{
+    text-decoration: none;
+    color: inherit;
+}
+.cardcontent p{
+    padding-top: 5px;
+}
+.card1 img{
+    width: 100%;
+    height: 300px;
+   
+}
+.cardicon{
+    color: yellow;
+    padding-top: 5px;
+}
+.cardbox:hover{
+    box-shadow: 5px 5px 5px gray;
+    transform: translate(-15px,-15px);
+    
+}
+.place{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+                                             /*home place */
+
+.picbox{
+    width:300px;
+    height: 400px;
+
+}
+.picbox img{
+    width: 300px ;
+    height: 400px;
+    position: absolute;
+}
+.picbox h1{
+    position: relative;
+    color: white;
+    left: 20px;
+    top:340px;
+    display: none;
+
+}
+.picbox:hover h1{
+    display:block;
+    cursor: pointer;
+}
+.picbox:hover{
+    transform: translate(-10px,-10px);
+}
+.placebox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.placebox a{
+    text-decoration: none;
+    color: inherit;
+}
+.place h1{
+    padding-bottom: 30px;
+}
+
+                                        /* destination */
+
+.piccontent{
+    width: 0;
+    height: 0; 
+    opacity: 0; 
+   
+    
+    
+}
+
+.imgbox:hover .piccontent{
+    width: 300px;
+    height: 400px; 
+    padding: 10px;
+    opacity: 1; 
+}
+.destination{
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+}
+.destination::-webkit-scrollbar{
+    display: none;
+}
+.imgbox{
+    
+    height: 400px;
+    display: flex;
+    padding: 5px;
+   
+}
+.imgbox img{
+    width: 300px;
+    height: 400px;
+}
+
+                                                      /*index hotel */
+
+    .hoteltitle{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }   
+                                                
+    .hotelbox{
+        width:300px;
+        height: 500px;
+        overflow: hidden;
+    
+    }
+    .hotelbox img{
+        width: 300px ;
+        height: 400px;
+        position: absolute;
+        transition: 0.5s ease-in;
+        filter: grayscale(40%);
+
+    }
+    .hotelbox h2{
+        position: relative;
+        color: white;
+        left: 20px;
+        top:340px;
+        display: none;
+        
+    
+    }
+    .hotelbox:hover h2{
+        display:block;
+        cursor: pointer;
+    }
+   
+    .hoteloverall{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap:50px;
+        
+    }
+    .hoteloverall a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .hotel h1{
+        padding-bottom: 30px;
+    }
+    .hotelbox:hover img{
+
+        transform: scale(1.2);
+        filter: grayscale(0);
+    }
+    @media screen and(min-width:300px)and (max-width:500p) {
+        .hotelbox img{
+            width: 290px ;
+            height: 400px;
+            position: absolute;
+            transition: 0.5s ease-in;
+            filter: grayscale(40%);
+    
+        }
+        .hotelbox:hover img{
+            width: 300px;
+            transform: scale(1.2);
+            filter: grayscale(0);
+        }
+        
+    }
+                                      /* hotel page */
+    .overallcontent{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+   
+    .overallcontent{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .hotelimgdiv{
+        width: 450px;
+        min-height: 300px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        
+
+    }
+    .hotelimgdiv img{
+        width: 100%;
+       
+    }
+    .overallhotelimg{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 10px;
+        
+    }
+    .hoteldetail img{
+        width: 100px;
+        height: 100px;
+
+    }
+    .hoteldetail{
+        width: 0;
+        height: 0;
+        display: none;
+       
+        
+        
+    }
+    .hotelimgdiv:hover .hoteldetail{
+        width: 100%;
+        height: 200px;
+        display: block;
+        background-color: burlywood;
+        
+        
+    }
+    @media screen and (min-width:300px) and (max-width:500px){
+        .hotelimgdiv{
+            width: 300px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            
+    
+        }
+        .hoteldetail img{
+            width: 75px;
+            height: 75px;
+    
+        }
+        
+    }
+
+
+
+footer{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    background-color:rgb(6, 6, 46);
+    color: white;
+    padding: 50px 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    gap:100px
+}
+.box0 h1{
+    padding-bottom:30px;
+    
+}
+.box0 p{
+    line-height: 30px;
+}
+
+button{
+    padding: 20px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.bt1{
+    background-color: black;
+    color: white;
+}
+.bt2{
+    background-color: black;
+    color: white;
+}
+.bt1:hover{
+    background-color: white;
+    color: black;
+}
+.bt2:hover{
+    background-color: white;
+    color: black;
+}
+.bt1:hover i{
+    color: black;
+}
+.bt2:hover i{
+    color: black;
+}
+.bt1 i{
+      padding-right:10px ;
+      font-size: 25px;
+      color: white;
+
+}
+.bt1 h2{
+       padding-top: 3px;
+}
+
+.bt2 i{
+    font-size: 30px;
+    padding-right:10px ;
+    color: white;
+}
+.btbox{
+    width: 450px;
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+    justify-content: space-around;   
+}
+.btoverall{
+    margin-top: 200px;
+
+}
+.iconbox1 i{
+    font-size: 25px;
+    color: white;
+    margin-top: 20px;
+   
+}
+
+.iconbox1{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: space-around;
+    
+}
+@media screen and (min-width:300px) and (max-width:500px){
+    .btbox{
+        width: 280px;
+        display: grid;
+        gap:20px;
+        grid-template-columns: auto;
+    }
+    .btoverall{
+        width: 290px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+    .bt2 i{
+        font-size: 25px;
+        padding-right:7px ;
+    }
+    .bt1{
+        width:100%;
+    }
+    .bt2{
+        width:100;
+    }
+    .bt1 i{
+        padding-right:10px ;
+        font-size: 25px;
+  
+  }
+  .bt1 h2{
+         padding-top: 3px;
+         font-size: 20px;
+  }
+  .bt2 h2{
+    font-size: 25px;
+  }
+    
+}
+
+
+
+
+
+
+
+
+
+
